@@ -1,0 +1,75 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(img/dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 145px;
+    left: 20px;
+}
+
+#cactus{
+    width: 25px;
+    height: 50px;
+    background-image: url(img/cactus.png);
+    background-size: 25px 50px;
+    position: relative;
+    top: 100px;
+    left: 575px;
+    animation: cactusMove 1.5s infinite linear ;
+}
+
+@keyframes cactusMove{
+ 0% {
+     left: 575px;
+ }
+ 100% {
+     left: -20px;
+ }
+}
+
+.jump{
+    animation: jump 0.3s  linear ;
+}
+
+@keyframes jump{
+    0% {
+        top: 150px;
+    }
+    30%{
+        top: 110px;
+    }
+    50%{
+        top: 60px;
+    }
+    80%{
+        top: 110px;
+    }
+    100% {
+        top: 150px;
+    }
+   }
+
+   #scoring{
+       font-size: 18px;
+       color: #000;
+       position: relative;
+       top: -70px;
+       left: -150px;
+   }
+
+   #over{
+       display: none;
+       color: red;
+       font-size: 30px;
+       
+       position: absolute;
+       left: 40%;
+   }
